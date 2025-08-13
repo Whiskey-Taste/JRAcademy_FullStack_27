@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB-1A杰出人才移民申请条件 | 十项标准详解 | 在线评估</title>
+    <meta name="description" content="详解美国EB-1A杰出人才移民十项评估标准，提供免费在线评估工具，98%通过率，最快15天获批。">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e3c72;
+            --secondary-blue: #2a5298;
+            --accent-gold: #ffd700;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+            --success-green: #4CAF50;
+            --warning-orange: #FF9800;
+            --danger-red: #F44336;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', '微软雅黑', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* 顶部标语 */
+        .top-banner {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* 导航栏 */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary-blue);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-blue);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        /* 页面头部 */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            padding: 80px 30px 100px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .page-subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .badge-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--accent-gold);
+        }
+
+        .badge-text {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* 快速导航 */
+        .sticky-nav {
+            background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.8);
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+            padding: 20px;
+            border-top: 3px solid;
+            border-image: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue), var(--accent-gold)) 1;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .sticky-nav .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .nav-btn:hover::before {
+            left: 100%;
+        }
+
+        .nav-btn.active,
+        .nav-btn:hover {
+            background: var(--primary-blue);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        /* 基本申请要求 */
+        .basic-requirements {
+            padding: 60px 30px 80px;
+            background: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .section-desc {
+            color: var(--text-light);
+            font-size: 18px;
+        }
+
+        .requirement-types {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .requirement-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .requirement-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .requirement-card.featured {
+            border: 3px solid var(--accent-gold);
+            position: relative;
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .requirement-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: white;
+        }
+
+        .requirement-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        .requirement-desc {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .requirement-example {
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        /* 十项标准详解 */
+        .ten-criteria {
+            padding: 60px 30px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .criteria-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .criterion-item {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--primary-blue);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .criterion-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .criterion-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .criterion-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .criterion-title {
+            font-size: 18px;
+            color: var(--text-dark);
+        }
+
+        .criterion-desc {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .criterion-examples {
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .criterion-examples strong {
+            color: var(--primary-blue);
+        }
+
+        /* 在线评估工具 */
+        .evaluation-tool {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 60px 30px 80px;
+        }
+
+        .evaluation-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .evaluation-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .evaluation-title {
+            font-size: 32px;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .evaluation-subtitle {
+            color: var(--text-light);
+        }
+
+        .evaluation-form {
+            margin-bottom: 30px;
+        }
+
+        .criteria-checklist {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .criterion-checkbox {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .criterion-checkbox:hover {
+            background: #e8e9ea;
+            transform: translateX(5px);
+        }
+
+        .criterion-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .criterion-checkbox label {
+            flex: 1;
+            cursor: pointer;
+        }
+
+        .criterion-checkbox.selected {
+            background: #e8f5e9;
+            border: 2px solid var(--success-green);
+        }
+
+        .evaluation-button {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .evaluation-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(30, 60, 114, 0.3);
+        }
+
+        .evaluation-result {
+            display: none;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .result-success {
+            background: #e8f5e9;
+            border: 2px solid var(--success-green);
+        }
+
+        .result-warning {
+            background: #fff3e0;
+            border: 2px solid var(--warning-orange);
+        }
+
+        .result-danger {
+            background: #ffebee;
+            border: 2px solid var(--danger-red);
+        }
+
+        .result-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .result-success .result-title {
+            color: var(--success-green);
+        }
+
+        .result-warning .result-title {
+            color: var(--warning-orange);
+        }
+
+        .result-danger .result-title {
+            color: var(--danger-red);
+        }
+
+        .result-desc {
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+
+        .result-recommendation {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* 申请材料清单 */
+        .documents-section {
+            padding: 60px 30px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .document-category {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category-name {
+            font-size: 20px;
+        }
+
+        .document-list {
+            padding: 25px;
+        }
+
+        .document-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .document-item:last-child {
+            border-bottom: none;
+        }
+
+        .document-item i {
+            color: var(--success-green);
+            margin-right: 10px;
+        }
+
+        /* CTA部分 */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            padding: 80px 30px 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .cta-subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+
+
+        .btn-white {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+
+
+
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 32px;
+            }
+            
+            .hero-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .sticky-nav {
+                top: 70px;
+                padding: 15px;
+            }
+            
+            .sticky-nav .nav-container {
+                gap: 10px;
+            }
+            
+            .nav-btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+            
+            .requirement-types {
+                grid-template-columns: 1fr;
+            }
+            
+            .criteria-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .documents-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部标语 -->
+    <div class="top-banner">
+        Behind Everyone Above Everything
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <span>专业移民服务</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="immigration-info.html">移民信息</a></li>
+                <li><a href="eb1a-requirement.html" class="active">EB1-A申请条件</a></li>
+                <li><a href="successful-cases.html">成功案例</a></li>
+                <li><a href="overseas-real-estate.html">海外房产</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary">预约咨询</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面头部 -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="page-title">EB-1A 杰出人才移民申请条件</h1>
+            <p class="page-subtitle">满足十项标准中的三项即可申请</p>
+            <div class="hero-badges">
+                <div class="badge">
+                    <div class="badge-number">98%</div>
+                    <div class="badge-text">通过率</div>
+                </div>
+                <div class="badge">
+                    <div class="badge-number">15天</div>
+                    <div class="badge-text">加急获批</div>
+                </div>
+                <div class="badge">
+                    <div class="badge-number">500+</div>
+                    <div class="badge-text">成功案例</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速导航 -->
+    <div class="sticky-nav">
+        <div class="nav-container">
+            <button class="nav-btn active" onclick="scrollToSection('basic')">基本要求</button>
+            <button class="nav-btn" onclick="scrollToSection('criteria')">十项标准</button>
+            <button class="nav-btn" onclick="scrollToSection('evaluation')">在线评估</button>
+            <button class="nav-btn" onclick="scrollToSection('documents')">申请材料</button>
+        </div>
+    </div>
+
+    <!-- 基本申请要求 -->
+    <section id="basic" class="basic-requirements">
+        <div class="section-header">
+            <h2 class="section-title">EB-1A 基本申请要求</h2>
+            <p class="section-desc">两种方式满足其一即可申请</p>
+        </div>
+        <div class="requirement-types">
+            <div class="requirement-card featured">
+                <span class="featured-badge">推荐路径</span>
+                <div class="requirement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="requirement-title">类别二：满足十项标准中的三项</h3>
+                <p class="requirement-desc">
+                    适合在科学、艺术、教育、商业或体育领域具有杰出能力的专业人士。通过满足十项标准中的至少三项来证明您的杰出成就。
+                </p>
+                <div class="requirement-example">
+                    <strong>适用人群：</strong><br>
+                    企业高管、医生、教授、艺术家、运动员、科研人员等各领域精英
+                </div>
+            </div>
+            
+            <div class="requirement-card">
+                <div class="requirement-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3 class="requirement-title">类别一：获得国际级大奖</h3>
+                <p class="requirement-desc">
+                    如果您获得过诺贝尔奖、奥斯卡奖、奥运会奖牌等世界级大奖，可直接申请，无需满足其他条件。
+                </p>
+                <div class="requirement-example">
+                    <strong>认可奖项：</strong><br>
+                    诺贝尔奖、普利策奖、奥斯卡奖、格莱美奖、奥运会奖牌等
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 十项标准详解 -->
+    <section id="criteria" class="ten-criteria">
+        <div class="section-header">
+            <h2 class="section-title">EB-1A 十项评估标准详解</h2>
+            <p class="section-desc">满足以下十项标准中的三项即可申请</p>
+        </div>
+        <div class="criteria-grid">
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">01</span>
+                    <h3 class="criterion-title">获得国家级或国际性奖项</h3>
+                </div>
+                <p class="criterion-desc">曾经获得国家级或其他国际性的个人奖项</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>国家科技进步奖、行业杰出贡献奖、国际设计大奖等
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">02</span>
+                    <h3 class="criterion-title">专业协会会员</h3>
+                </div>
+                <p class="criterion-desc">本领域重要协会组织的有效会员</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>需要杰出成就才能加入的专业协会，如IEEE Fellow、中国科学院院士等
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">03</span>
+                    <h3 class="criterion-title">媒体报道</h3>
+                </div>
+                <p class="criterion-desc">有专业媒体、行业主流媒体、或其他主流媒体对申请人及其工作的专访类报道</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>人民日报、新华社、行业权威杂志的专题报道
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">04</span>
+                    <h3 class="criterion-title">担任评审</h3>
+                </div>
+                <p class="criterion-desc">为相关行业专业领域内的其他人的工作担任评审</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>期刊审稿人、大赛评委、职称评审专家、项目评审专家等
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">05</span>
+                    <h3 class="criterion-title">原创性贡献</h3>
+                </div>
+                <p class="criterion-desc">对本专业领域作出重大意义的原创性贡献</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>发明专利、创新理论、新技术研发、新商业模式等
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">06</span>
+                    <h3 class="criterion-title">学术文章</h3>
+                </div>
+                <p class="criterion-desc">在专业期刊、主要行业媒体上发表过学术文章</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>SCI/EI收录论文、行业核心期刊文章、专业书籍等
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">07</span>
+                    <h3 class="criterion-title">作品展览或展示</h3>
+                </div>
+                <p class="criterion-desc">申请人本人的作品参加过展览或展示</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>艺术展览、设计作品展、产品发布会、影视作品上映等
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">08</span>
+                    <h3 class="criterion-title">领导性或关键性作用</h3>
+                </div>
+                <p class="criterion-desc">在某些信誉卓著的组织机构中发挥领导性或关键性作用</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>知名企业高管、研究机构负责人、重要项目负责人等
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">09</span>
+                    <h3 class="criterion-title">高收入</h3>
+                </div>
+                <p class="criterion-desc">获得超过同行的高收入或者酬劳</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>年薪显著高于行业平均水平，有税单、工资单等证明
+                </div>
+            </div>
+
+            <div class="criterion-item">
+                <div class="criterion-header">
+                    <span class="criterion-number">10</span>
+                    <h3 class="criterion-title">商业成功</h3>
+                </div>
+                <p class="criterion-desc">在艺术或者商业表演中取得成功</p>
+                <div class="criterion-examples">
+                    <strong>举例：</strong>票房成功、销售记录、商业演出成就等
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在线评估工具 -->
+    <section id="evaluation" class="evaluation-tool">
+        <div class="evaluation-container">
+            <div class="evaluation-header">
+                <h2 class="evaluation-title">EB-1A 资格在线评估</h2>
+                <p class="evaluation-subtitle">选择您符合的条件，系统将为您进行初步评估</p>
+            </div>
+            
+            <form id="evaluationForm" class="evaluation-form">
+                <div class="criteria-checklist">
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion1" name="criteria" value="awards">
+                        <label for="criterion1">获得过国家级或国际性重要奖项</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion2" name="criteria" value="membership">
+                        <label for="criterion2">是要求杰出成就的专业协会会员</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion3" name="criteria" value="media">
+                        <label for="criterion3">有主流媒体对您的专访或报道</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion4" name="criteria" value="judge">
+                        <label for="criterion4">担任过专业评审或评委</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion5" name="criteria" value="contribution">
+                        <label for="criterion5">在专业领域有原创性重大贡献</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion6" name="criteria" value="publication">
+                        <label for="criterion6">发表过学术文章或出版过专业书籍</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion7" name="criteria" value="exhibition">
+                        <label for="criterion7">作品参加过展览或展示</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion8" name="criteria" value="leadership">
+                        <label for="criterion8">在知名机构担任领导或关键职位</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion9" name="criteria" value="salary">
+                        <label for="criterion9">收入显著高于同行业平均水平</label>
+                    </div>
+                    <div class="criterion-checkbox">
+                        <input type="checkbox" id="criterion10" name="criteria" value="commercial">
+                        <label for="criterion10">在商业或艺术表演中取得成功</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="evaluation-button">立即评估</button>
+            </form>
+            
+            <div id="evaluationResult" class="evaluation-result"></div>
+        </div>
+    </section>
+
+    <!-- 申请材料清单 -->
+    <section id="documents" class="documents-section">
+        <div class="section-header">
+            <h2 class="section-title">申请材料清单</h2>
+            <p class="section-desc">准备充分的申请材料是成功的关键</p>
+        </div>
+        <div class="documents-grid">
+            <div class="document-category">
+                <div class="category-header">
+                    <div class="category-icon">📋</div>
+                    <h3 class="category-name">基础材料</h3>
+                </div>
+                <div class="document-list">
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>护照复印件</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>个人简历</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>学历证书</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>工作证明</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>个人陈述</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-category">
+                <div class="category-header">
+                    <div class="category-icon">🏆</div>
+                    <h3 class="category-name">成就证明</h3>
+                </div>
+                <div class="document-list">
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>获奖证书</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>媒体报道</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>专利证书</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>学术论文</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>会员证明</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-category">
+                <div class="category-header">
+                    <div class="category-icon">📝</div>
+                    <h3 class="category-name">推荐材料</h3>
+                </div>
+                <div class="document-list">
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>推荐信（3-5封）</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>专家证词</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>行业认可证明</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>合作协议</span>
+                    </div>
+                    <div class="document-item">
+                        <i class="fas fa-check"></i>
+                        <span>项目证明</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA部分 -->
+    <section class="cta-section">
+        <h2 class="cta-title">准备申请EB-1A？</h2>
+        <p class="cta-subtitle">专业团队助您成功获批，98%通过率</p>
+        <div class="cta-buttons">
+            <a href="#evaluation" class="btn btn-white">免费评估</a>
+            <a href="tel:400-123-4567" class="btn btn-outline-white">咨询专家</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; padding: 60px 30px 30px;">
+        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px;">
+            <div>
+                <h3 style="margin-bottom: 20px;">关于我们</h3>
+                <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">10年专业移民服务经验，500+成功案例，98%通过率，为您的美国梦保驾护航。</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">快速链接</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;"><a href="eb1a-requirement.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">EB-1A申请条件</a></li>
+                    <li style="margin-bottom: 10px;"><a href="successful-cases.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">成功案例</a></li>
+                    <li style="margin-bottom: 10px;"><a href="immigration-info.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">移民信息</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">联系方式</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 400-123-4567</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> info@eb1a-immigration.com</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 北京市朝阳区某某大厦10层</p>
+            </div>            
+            <div>
+                <h3 style="margin-bottom: 20px;">分支机构</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 上海：浦东新区陆家嘴</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> 深圳：福田区CBD中心</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 洛杉矶：Downtown LA</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">关注我们</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px;">扫码关注公众号，获取最新移民资讯</p>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div style="background: white; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="color: #333;">二维码</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 120px; gap: 15px;">
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weixin"></i></a>
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="color: rgba(255,255,255,0.5);">© 2024 专业移民服务 | 京ICP备XXXXXXX号 | Behind Everyone Above Everything</p>
+        </div>
+    </footer>
+
+    <script>
+        // 导航滚动
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            
+            // 更新活动按钮
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        // 复选框交互
+        document.querySelectorAll('.criterion-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('click', function() {
+                const input = this.querySelector('input[type="checkbox"]');
+                if (input.checked) {
+                    this.classList.add('selected');
+                } else {
+                    this.classList.remove('selected');
+                }
+            });
+        });
+
+        // 评估表单提交
+        document.getElementById('evaluationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const checkedBoxes = document.querySelectorAll('input[name="criteria"]:checked');
+            const count = checkedBoxes.length;
+            
+            let resultHTML = '';
+            let resultClass = '';
+            
+            if (count >= 5) {
+                resultClass = 'result-success';
+                resultHTML = `
+                    <h3 class="result-title">🎉 恭喜！您高度符合EB-1A申请条件</h3>
+                    <p class="result-desc">您已满足${count}项标准，远超最低要求的3项。您的申请成功率非常高！</p>
+                    <div class="result-recommendation">
+                        <strong>专家建议：</strong>
+                        <p>建议您立即开始准备申请材料，我们的专业团队可以帮助您在最短时间内完成申请。</p>
+                    </div>
+                `;
+            } else if (count >= 3) {
+                resultClass = 'result-success';
+                resultHTML = `
+                    <h3 class="result-title">✅ 您符合EB-1A申请条件</h3>
+                    <p class="result-desc">您已满足${count}项标准，达到申请要求。建议进一步完善材料以提高成功率。</p>
+                    <div class="result-recommendation">
+                        <strong>专家建议：</strong>
+                        <p>您的条件符合申请要求，建议预约专业顾问进行深度评估，制定最优申请策略。</p>
+                    </div>
+                `;
+            } else if (count >= 2) {
+                resultClass = 'result-warning';
+                resultHTML = `
+                    <h3 class="result-title">⚠️ 接近申请条件</h3>
+                    <p class="result-desc">您目前满足${count}项标准，还需要至少${3-count}项才能申请。</p>
+                    <div class="result-recommendation">
+                        <strong>专家建议：</strong>
+                        <p>您的条件很有潜力，建议咨询专业顾问，看是否有其他可以挖掘的亮点。</p>
+                    </div>
+                `;
+            } else {
+                resultClass = 'result-danger';
+                resultHTML = `
+                    <h3 class="result-title">📋 需要更多准备</h3>
+                    <p class="result-desc">您目前满足${count}项标准，建议继续积累成就。</p>
+                    <div class="result-recommendation">
+                        <strong>专家建议：</strong>
+                        <p>建议您先了解NIW国家利益豁免项目，或继续在专业领域积累成就。</p>
+                    </div>
+                `;
+            }
+            
+            const resultDiv = document.getElementById('evaluationResult');
+            resultDiv.className = 'evaluation-result ' + resultClass;
+            resultDiv.innerHTML = resultHTML;
+            resultDiv.style.display = 'block';
+            
+            // 滚动到结果
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国EB-1A杰出人才移民 | NIW国家利益豁免 - 专业移民服务</title>
+    <meta name="description" content="10年专业经验，500+成功案例，98%通过率。提供EB-1A杰出人才和NIW国家利益豁免移民服务，最快15天获批。">
+    <meta name="keywords" content="EB-1A,NIW,美国移民,杰出人才移民,国家利益豁免,绿卡申请">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e3c72;
+            --secondary-blue: #2a5298;
+            --accent-gold: #ffd700;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', '微软雅黑', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* 顶部标语 */
+        .top-banner {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* 导航栏 */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary-blue);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-blue);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        /* 英雄区域 */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 100px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: float 20s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            color: white;
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content .highlight {
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        .hero-description {
+            color: rgba(255,255,255,0.9);
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: bold;
+            color: var(--accent-gold);
+            display: block;
+        }
+
+        .stat-label {
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .hero-form {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        .form-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+
+        .form-subtitle {
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: var(--primary-blue);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+        }
+
+        .btn-block {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        /* 项目对比 */
+        .comparison {
+            padding: 80px 30px;
+            background: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 18px;
+        }
+
+        .comparison-cards {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card.featured {
+            border: 3px solid var(--accent-gold);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .project-card.featured .project-header {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+        }
+
+        .project-name {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .project-category {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .project-features {
+            padding: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+
+        .feature-icon {
+            width: 30px;
+            color: #4CAF50;
+            font-size: 20px;
+        }
+
+        .feature-label {
+            flex: 1;
+            color: var(--text-light);
+        }
+
+        .feature-value {
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .project-card.featured .feature-value {
+            color: #e67e22;
+        }
+
+        .project-cta {
+            padding: 20px 30px;
+            background: var(--bg-light);
+            text-align: center;
+        }
+
+        /* 服务优势 */
+        .advantages {
+            padding: 80px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .advantage-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .advantage-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+        }
+
+        .advantage-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+
+        .advantage-desc {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* 成功案例预览 */
+        .cases-preview {
+            padding: 80px 30px;
+            background: var(--bg-light);
+        }
+
+        .cases-stats {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .case-stat-card {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .case-stat-card:hover {
+            background: var(--primary-blue);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .case-field {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .case-count {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .case-stat-card:hover .case-count {
+            color: white;
+        }
+
+        .view-all-cases {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* 绿卡福利 */
+        .benefits {
+            padding: 80px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-top: 3px solid transparent;
+        }
+
+        .benefit-card:hover {
+            border-top-color: var(--primary-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--primary-blue);
+        }
+
+        .benefit-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .benefit-desc {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* CTA区域 */
+        .cta {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            padding: 100px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .cta-subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary-blue);
+            padding: 15px 40px;
+            font-size: 18px;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content h1 {
+                font-size: 32px;
+            }
+            
+            .comparison-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .advantages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cases-stats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部标语 -->
+    <div class="top-banner">
+        Behind Everyone Above Everything
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <span>专业移民服务</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="immigration-info.html">移民信息</a></li>
+                <li><a href="eb1a-requirement.html">EB1-A申请条件</a></li>
+                <li><a href="successful-cases.html">成功案例</a></li>
+                <li><a href="overseas-real-estate.html">海外房产</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary">预约咨询</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>美国EB-1A杰出人才<br>与NIW国家利益豁免<br><span class="highlight">移民快速通道</span></h1>
+                <p class="hero-description">第一优先类别，最快15天获批，一步到位获永久绿卡</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500" data-prefix="" data-suffix="+">0</span>
+                        <span class="stat-label">成功案例</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="98" data-prefix="" data-suffix="%">0</span>
+                        <span class="stat-label">通过率</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10" data-prefix="" data-suffix="+">0</span>
+                        <span class="stat-label">年经验</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#evaluation" class="btn btn-primary" style="background: white; color: var(--primary-blue); padding: 12px 35px; font-size: 16px;">
+                        立即免费评估
+                    </a>
+                    <a href="successful-cases.html" class="btn btn-outline" style="color: white; border-color: white; padding: 12px 35px; font-size: 16px;">
+                        查看成功案例
+                    </a>
+                </div>
+            </div>
+            <div class="hero-form">
+                <h2 class="form-title">免费资格评估</h2>
+                <p class="form-subtitle">30秒快速评估，专家1对1解答</p>
+                <form id="evaluationForm">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" placeholder="联系电话" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="电子邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-input" required>
+                            <option value="">选择意向项目</option>
+                            <option value="eb1a">EB-1A 杰出人才</option>
+                            <option value="niw">NIW 国家利益豁免</option>
+                            <option value="both">两者都考虑</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">获取免费评估报告</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目对比 -->
+    <section class="comparison">
+        <div class="section-header">
+            <h2 class="section-title">选择最适合您的移民项目</h2>
+            <p class="section-subtitle">EB-1A vs NIW 详细对比，让您的选择更明智</p>
+        </div>
+        <div class="comparison-cards">
+            <div class="project-card featured">
+                <div class="project-header">
+                    <h3 class="project-name">EB-1A 杰出人才</h3>
+                    <p class="project-category">第一优先类别 · 推荐项目</p>
+                </div>
+                <div class="project-features">
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">审批时间</span>
+                        <span class="feature-value">15天(加急)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">获绿卡时间</span>
+                        <span class="feature-value">2-3年</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">学历要求</span>
+                        <span class="feature-value">无</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">雇主要求</span>
+                        <span class="feature-value">无</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">适用领域</span>
+                        <span class="feature-value">科学/艺术/教育/商业/体育</span>
+                    </div>
+                </div>
+                <div class="project-cta">
+                    <a href="eb1a-requirement.html" class="btn btn-primary">了解申请条件</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">NIW 国家利益豁免</h3>
+                    <p class="project-category">第二优先类别</p>
+                </div>
+                <div class="project-features">
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">审批时间</span>
+                        <span class="feature-value">45天(加急)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">获绿卡时间</span>
+                        <span class="feature-value">3-4年</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">学历要求</span>
+                        <span class="feature-value">高学历优先</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">雇主要求</span>
+                        <span class="feature-value">无</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                        <span class="feature-label">适用领域</span>
+                        <span class="feature-value">科学/艺术/商业</span>
+                    </div>
+                </div>
+                <div class="project-cta">
+                    <a href="immigration-info.html" class="btn btn-outline">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务优势 -->
+    <section class="advantages">
+        <div class="section-header">
+            <h2 class="section-title">为什么选择我们</h2>
+            <p class="section-subtitle">专业团队，成功率导向，全程护航</p>
+        </div>
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="advantage-title">98%通过率</h3>
+                <p class="advantage-desc">500+成功案例，行业领先的通过率</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="advantage-title">专业团队</h3>
+                <p class="advantage-desc">资深律师+专业文案+英文母语校对</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="advantage-title">快速办理</h3>
+                <p class="advantage-desc">加急15天获批，标准化流程</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="advantage-title">律师护航</h3>
+                <p class="advantage-desc">美国执业律师全程把关</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例预览 -->
+    <section class="cases-preview">
+        <div class="section-header">
+            <h2 class="section-title">成功案例行业分布</h2>
+            <p class="section-subtitle">覆盖各行各业精英人才</p>
+        </div>
+        <div class="cases-stats">
+            <div class="case-stat-card">
+                <div class="case-field">临床医生</div>
+                <div class="case-count">16</div>
+            </div>
+            <div class="case-stat-card">
+                <div class="case-field">企业高管</div>
+                <div class="case-count">15</div>
+            </div>
+            <div class="case-stat-card">
+                <div class="case-field">营销专家</div>
+                <div class="case-count">11</div>
+            </div>
+            <div class="case-stat-card">
+                <div class="case-field">金融专家</div>
+                <div class="case-count">9</div>
+            </div>
+            <div class="case-stat-card">
+                <div class="case-field">大数据专家</div>
+                <div class="case-count">9</div>
+            </div>
+            <div class="case-stat-card">
+                <div class="case-field">上市公司高管</div>
+                <div class="case-count">8</div>
+            </div>
+        </div>
+        <div class="view-all-cases">
+            <a href="successful-cases.html" class="btn btn-primary">查看全部成功案例</a>
+        </div>
+    </section>
+
+    <!-- 绿卡福利 -->
+    <section class="benefits">
+        <div class="section-header">
+            <h2 class="section-title">美国绿卡福利待遇</h2>
+            <p class="section-subtitle">一卡在手，全家受益</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🎓</div>
+                <h3 class="benefit-title">免费教育</h3>
+                <p class="benefit-desc">美国全部公立中小学实行义务教育，零学费。上大学只需支付本地生源学费。</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💼</div>
+                <h3 class="benefit-title">就业自由</h3>
+                <p class="benefit-desc">在美国工作不受限制，可从事高科技、生化、军事等研究工作。</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🏥</div>
+                <h3 class="benefit-title">医疗保险</h3>
+                <p class="benefit-desc">退休后可申请医疗卡，看病不花钱，彻底解除后顾之忧。</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💰</div>
+                <h3 class="benefit-title">退休福利</h3>
+                <p class="benefit-desc">累计十年交税记录后，退休可终身领取联邦政府退休金。</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🏠</div>
+                <h3 class="benefit-title">购房补贴</h3>
+                <p class="benefit-desc">退休后可用市场价35%的价格购买国家补贴住房。</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                <h3 class="benefit-title">亲属受益</h3>
+                <p class="benefit-desc">可为配偶、子女、父母及兄弟姐妹申请移民美国。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区域 -->
+    <section class="cta">
+        <h2 class="cta-title">开启您的美国梦想之旅</h2>
+        <p class="cta-subtitle">专业评估 · 精准定位 · 全程护航</p>
+        <div class="cta-buttons">
+            <a href="#evaluation" class="btn btn-white">立即免费评估</a>
+            <a href="tel:400-123-4567" class="btn btn-outline" style="color: white; border-color: white;">电话咨询专家</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer style="background: #2c3e50; color: white; padding: 60px 30px 30px;">
+        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px;">
+            <div>
+                <h3 style="margin-bottom: 20px;">关于我们</h3>
+                <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">10年专业移民服务经验，500+成功案例，98%通过率，为您的美国梦保驾护航。</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">快速链接</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;"><a href="eb1a-requirement.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">EB-1A申请条件</a></li>
+                    <li style="margin-bottom: 10px;"><a href="successful-cases.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">成功案例</a></li>
+                    <li style="margin-bottom: 10px;"><a href="immigration-info.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">移民信息</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">联系方式</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 400-123-4567</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> info@eb1a-immigration.com</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 北京市朝阳区某某大厦10层</p>
+            </div>            
+            <div>
+                <h3 style="margin-bottom: 20px;">分支机构</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 上海：浦东新区陆家嘴</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> 深圳：福田区CBD中心</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 洛杉矶：Downtown LA</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">关注我们</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px;">扫码关注公众号，获取最新移民资讯</p>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div style="background: white; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="color: #333;">二维码</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 120px; gap: 15px;">
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weixin"></i></a>
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="color: rgba(255,255,255,0.5);">© 2024 专业移民服务 | 京ICP备XXXXXXX号 | Behind Everyone Above Everything</p>
+        </div>
+    </footer>
+
+    <script>
+        // 数字动画函数
+        function animateNumber(element, start, end, duration, prefix = '', suffix = '') {
+            const startTime = performance.now();
+            const difference = end - start;
+            
+            function updateNumber(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // 使用缓动函数让动画更自然
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const current = Math.round(start + (difference * easeOutQuart));
+                
+                element.textContent = prefix + current + suffix;
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                }
+            }
+            
+            requestAnimationFrame(updateNumber);
+        }
+
+        // 观察器回调函数
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        const prefix = stat.getAttribute('data-prefix') || '';
+                        const suffix = stat.getAttribute('data-suffix') || '';
+                        
+                        // 根据不同的数值设置不同的起始值和动画时长
+                        if (target === 500) {
+                            // 成功案例：从0增长到500
+                            animateNumber(stat, 0, target, 500, prefix, suffix);
+                        } else if (target === 98) {
+                            // 通过率：从0增长到98
+                            animateNumber(stat, 0, target, 500, prefix, suffix);
+                        } else if (target === 10) {
+                            // 年经验：从0增长到10
+                            animateNumber(stat, 0, target, 500, prefix, suffix);
+                        }
+                    });
+                    
+                    // 动画只执行一次
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // 创建观察器
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5, // 当元素50%可见时触发
+            rootMargin: '0px 0px -100px 0px' // 提前100px触发
+        });
+
+        // 观察英雄区域
+        const heroSection = document.querySelector('.hero');
+        if (heroSection) {
+            observer.observe(heroSection);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国移民信息 | EB类职业移民详解 | 专业移民服务</title>
+    <meta name="description" content="详细解读美国EB-1A、EB-1B、EB-1C、NIW等职业移民类别，包含申请条件、流程、费用等完整信息。">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e3c72;
+            --secondary-blue: #2a5298;
+            --accent-gold: #ffd700;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', '微软雅黑', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* 顶部标语 */
+        .top-banner {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* 导航栏 */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary-blue);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-blue);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        /* 页面标题 */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            padding: 80px 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .page-subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* 快速导航 */
+        .quick-nav {
+            background: white;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-tabs {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .nav-tab {
+            padding: 10px 25px;
+            background: transparent;
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .nav-tab.active,
+        .nav-tab:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        /* 主要内容区 */
+        .content-section {
+            max-width: 1400px;
+            margin: 60px auto;
+            padding: 0 30px;
+        }
+
+        /* EB-1类别详解 */
+        .eb1-categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 25px;
+        }
+
+        .category-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .category-subtitle {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .category-body {
+            padding: 25px;
+        }
+
+        .requirement-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .requirement-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .requirement-list li:last-child {
+            border-bottom: none;
+        }
+
+        .requirement-list i {
+            color: var(--success-green);
+            margin-right: 10px;
+        }
+
+        /* NIW详细介绍 */
+        .niw-section {
+            background: var(--bg-light);
+            padding: 60px 30px;
+            border-radius: 20px;
+            margin-bottom: 60px;
+        }
+
+        .niw-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .niw-title {
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .niw-criteria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .criterion-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-blue);
+            transition: all 0.3s;
+        }
+
+        .criterion-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateX(5px);
+        }
+
+        .criterion-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        /* 申请流程 */
+        .process-section {
+            margin-bottom: 60px;
+        }
+
+        .process-title {
+            text-align: center;
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 50px;
+        }
+
+        .process-timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            flex-shrink: 0;
+            z-index: 2;
+        }
+
+        .step-content {
+            flex: 1;
+            margin-left: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .step-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+
+        .step-desc {
+            color: var(--text-light);
+        }
+
+        .process-line {
+            position: absolute;
+            left: 30px;
+            top: 60px;
+            bottom: -40px;
+            width: 2px;
+            background: #ddd;
+            z-index: 1;
+        }
+
+        .process-step:last-child .process-line {
+            display: none;
+        }
+
+        /* 取绿卡方式对比 */
+        .green-card-methods {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 60px;
+        }
+
+        .methods-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .methods-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .methods-subtitle {
+            opacity: 0.9;
+        }
+
+        .methods-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .method-column {
+            padding: 40px;
+        }
+
+        .method-column:first-child {
+            border-right: 2px solid var(--bg-light);
+        }
+
+        .method-name {
+            font-size: 24px;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .method-location {
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .method-features {
+            list-style: none;
+        }
+
+        .method-features li {
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .method-features i {
+            color: var(--success-green);
+            margin-right: 15px;
+            margin-top: 3px;
+        }
+
+        /* 费用明细 */
+        .fee-section {
+            background: var(--bg-light);
+            padding: 60px 30px;
+            border-radius: 20px;
+        }
+
+        .fee-title {
+            text-align: center;
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 40px;
+        }
+
+        .fee-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .fee-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .fee-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .fee-icon {
+            font-size: 48px;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .fee-name {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .fee-amount {
+            font-size: 28px;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        /* FAQ部分 */
+        .faq-section {
+            max-width: 1000px;
+            margin: 60px auto;
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .faq-question {
+            padding: 25px;
+            background: var(--bg-light);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #e8e9ea;
+        }
+
+        .faq-question h3 {
+            margin: 0;
+            color: var(--text-dark);
+        }
+
+        .faq-icon {
+            font-size: 20px;
+            color: var(--primary-blue);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 25px;
+            max-height: 500px;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            padding: 80px 30px;
+            text-align: center;
+            color: white;
+            border-radius: 20px;
+            margin-top: 60px;
+        }
+
+        .cta-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .cta-desc {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+
+
+        .btn-white {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部标语 -->
+    <div class="top-banner">
+        Behind Everyone Above Everything
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <span>专业移民服务</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="immigration-info.html" class="active">移民信息</a></li>
+                <li><a href="eb1a-requirement.html">EB1-A申请条件</a></li>
+                <li><a href="successful-cases.html">成功案例</a></li>
+                <li><a href="overseas-real-estate.html">海外房产</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary">预约咨询</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-hero">
+        <h1 class="page-title">美国移民签证类别详解</h1>
+        <p class="page-subtitle">EB-1A、NIW及其他职业移民类别完整指南</p>
+    </section>
+
+    <!-- 快速导航 -->
+    <div class="quick-nav">
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="scrollToSection('eb1')">EB-1类别</button>
+            <button class="nav-tab" onclick="scrollToSection('niw')">NIW详解</button>
+            <button class="nav-tab" onclick="scrollToSection('process')">申请流程</button>
+            <button class="nav-tab" onclick="scrollToSection('greencard')">取绿卡方式</button>
+            <button class="nav-tab" onclick="scrollToSection('fees')">费用明细</button>
+            <button class="nav-tab" onclick="scrollToSection('faq')">常见问题</button>
+        </div>
+    </div>
+
+    <!-- EB-1类别详解 -->
+    <section id="eb1" class="content-section">
+        <h2 style="text-align: center; font-size: 36px; color: var(--primary-blue); margin-bottom: 40px;">
+            EB-1 第一优先职业移民
+        </h2>
+        <div class="eb1-categories">
+            <div class="category-card">
+                <div class="category-header">
+                    <h3 class="category-name">EB-1A 杰出人才</h3>
+                    <p class="category-subtitle">无需雇主担保 · 最快15天获批</p>
+                </div>
+                <div class="category-body">
+                    <ul class="requirement-list">
+                        <li><i class="fas fa-check"></i>适合科研、艺术、商业等领域精英</li>
+                        <li><i class="fas fa-check"></i>满足10项标准中的3项即可</li>
+                        <li><i class="fas fa-check"></i>无需雇主担保</li>
+                        <li><i class="fas fa-check"></i>无需劳工证</li>
+                        <li><i class="fas fa-check"></i>处理时间：3-6个月</li>
+                    </ul>
+                    <a href="eb1a-requirement.html" class="btn" style="display: block; text-align: center; background: var(--primary-blue); color: white; padding: 12px;">
+                        查看详细条件
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h3 class="category-name">EB-1B 杰出教授/研究员</h3>
+                    <p class="category-subtitle">高校与研究机构专属通道</p>
+                </div>
+                <div class="category-body">
+                    <ul class="requirement-list">
+                        <li><i class="fas fa-check"></i>适合高校/研究机构学者</li>
+                        <li><i class="fas fa-check"></i>需要雇主担保</li>
+                        <li><i class="fas fa-check"></i>3年以上研究经验</li>
+                        <li><i class="fas fa-check"></i>国际认可的杰出成就</li>
+                        <li><i class="fas fa-check"></i>处理时间：4-8个月</li>
+                    </ul>
+                    <button class="btn" style="display: block; width: 100%; background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); padding: 12px;">
+                        了解更多
+                    </button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h3 class="category-name">EB-1C 跨国公司高管</h3>
+                    <p class="category-subtitle">企业高管快速通道</p>
+                </div>
+                <div class="category-body">
+                    <ul class="requirement-list">
+                        <li><i class="fas fa-check"></i>适合跨国企业高管</li>
+                        <li><i class="fas fa-check"></i>需要雇主担保</li>
+                        <li><i class="fas fa-check"></i>过去3年中至少1年高管经验</li>
+                        <li><i class="fas fa-check"></i>管理级别或执行级别职位</li>
+                        <li><i class="fas fa-check"></i>处理时间：4-8个月</li>
+                    </ul>
+                    <button class="btn" style="display: block; width: 100%; background: transparent; border: 2px solid var(--primary-blue); color: var(--primary-blue); padding: 12px;">
+                        了解更多
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NIW详细介绍 -->
+    <section id="niw" class="content-section">
+        <div class="niw-section">
+            <div class="niw-header">
+                <h2 class="niw-title">NIW 国家利益豁免</h2>
+                <p style="color: var(--text-light); font-size: 18px;">第二优先类别 · 免劳工证 · 无需雇主</p>
+            </div>
+            <div class="niw-criteria">
+                <div class="criterion-card">
+                    <h3><span class="criterion-number">1</span>官方学术证明</h3>
+                    <p>在相关专业领域内曾经获得官方学术证明</p>
+                </div>
+                <div class="criterion-card">
+                    <h3><span class="criterion-number">2</span>十年工作经验</h3>
+                    <p>在相关专业领域内有十年以上全职工作经验</p>
+                </div>
+                <div class="criterion-card">
+                    <h3><span class="criterion-number">3</span>专业从业执照</h3>
+                    <p>在相关专业领域内有专业从业执照</p>
+                </div>
+                <div class="criterion-card">
+                    <h3><span class="criterion-number">4</span>高薪资报酬</h3>
+                    <p>所获得的薪资或报酬高于其他人</p>
+                </div>
+                <div class="criterion-card">
+                    <h3><span class="criterion-number">5</span>专业协会会员</h3>
+                    <p>专业协会的会员资格</p>
+                </div>
+                <div class="criterion-card">
+                    <h3><span class="criterion-number">6</span>重要贡献</h3>
+                    <p>在相关专业领域内作出重要贡献并被同行认可</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: var(--text-light);">
+                <strong>申请要求：</strong>满足以上7项标准中的至少3项即可申请
+            </p>
+        </div>
+    </section>
+
+    <!-- 申请流程 -->
+    <section id="process" class="content-section">
+        <h2 class="process-title">移民申请流程</h2>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">初步评估</h3>
+                    <p class="step-desc">专业顾问评估您的背景，确定最适合的移民项目，制定个性化方案</p>
+                </div>
+                <div class="process-line"></div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">材料准备</h3>
+                    <p class="step-desc">收集整理申请材料，专业文案团队撰写陈述信，英文母语校对</p>
+                </div>
+                <div class="process-line"></div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">递交I-140</h3>
+                    <p class="step-desc">向美国移民局递交I-140移民申请，可选择加急处理（15天出结果）</p>
+                </div>
+                <div class="process-line"></div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 class="step-title">等待审批</h3>
+                    <p class="step-desc">跟踪申请进度，及时响应补件要求（RFE），确保申请顺利进行</p>
+                </div>
+                <div class="process-line"></div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3 class="step-title">获得批准</h3>
+                    <p class="step-desc">I-140获批后，选择领事馆程序或I-485调整身份，最终获得绿卡</p>
+                </div>
+                <div class="process-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 取绿卡方式对比 -->
+    <section id="greencard" class="content-section">
+        <div class="green-card-methods">
+            <div class="methods-header">
+                <h2 class="methods-title">移民申请批准后取得绿卡方式</h2>
+                <p class="methods-subtitle">根据您的情况选择最适合的方式</p>
+            </div>
+            <div class="methods-comparison">
+                <div class="method-column">
+                    <h3 class="method-name">领事馆程序（CP）</h3>
+                    <p class="method-location">适用于：美国境外申请人</p>
+                    <ul class="method-features">
+                        <li><i class="fas fa-check-circle"></i>审理机构：国家签证中心(NVC)和美国领事馆</li>
+                        <li><i class="fas fa-check-circle"></i>审理时间：6-12个月</li>
+                        <li><i class="fas fa-check-circle"></i>需要面试：通常必须去领事馆面试</li>
+                        <li><i class="fas fa-check-circle"></i>体检地点：在面试当地（美国境外）</li>
+                        <li><i class="fas fa-check-circle"></i>费用：DS-260申请费$345 + 制卡费$220</li>
+                        <li><i class="fas fa-check-circle"></i>批准后获得移民签证，登陆美国即成为永久居民</li>
+                    </ul>
+                </div>
+                <div class="method-column">
+                    <h3 class="method-name">I-485调整身份（AOS）</h3>
+                    <p class="method-location">适用于：美国境内申请人</p>
+                    <ul class="method-features">
+                        <li><i class="fas fa-check-circle"></i>审理机构：美国移民局(USCIS)</li>
+                        <li><i class="fas fa-check-circle"></i>审理时间：10-18个月</li>
+                        <li><i class="fas fa-check-circle"></i>可同时申请工作许可(EAD)和回美证(AP)</li>
+                        <li><i class="fas fa-check-circle"></i>体检地点：在美国境内体检</li>
+                        <li><i class="fas fa-check-circle"></i>费用：I-485申请费$1140 + 指纹费$85</li>
+                        <li><i class="fas fa-check-circle"></i>批准之日即成为美国永久居民</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 费用明细 -->
+    <section id="fees" class="content-section">
+        <div class="fee-section">
+            <h2 class="fee-title">移民申请费用明细</h2>
+            <div class="fee-cards">
+                <div class="fee-card">
+                    <div class="fee-icon">📋</div>
+                    <h3 class="fee-name">I-140申请费</h3>
+                    <p class="fee-amount">$700</p>
+                    <p style="color: var(--text-light); margin-top: 10px;">普通处理</p>
+                </div>
+                <div class="fee-card">
+                    <div class="fee-icon">⚡</div>
+                    <h3 class="fee-name">加急处理费</h3>
+                    <p class="fee-amount">$2,500</p>
+                    <p style="color: var(--text-light); margin-top: 10px;">15天出结果</p>
+                </div>
+                <div class="fee-card">
+                    <div class="fee-icon">💳</div>
+                    <h3 class="fee-name">绿卡制作费</h3>
+                    <p class="fee-amount">$220</p>
+                    <p style="color: var(--text-light); margin-top: 10px;">每人</p>
+                </div>
+                <div class="fee-card">
+                    <div class="fee-icon">🏥</div>
+                    <h3 class="fee-name">体检费</h3>
+                    <p class="fee-amount">$1,100-1,400</p>
+                    <p style="color: var(--text-light); margin-top: 10px;">成人/人</p>
+                </div>
+                <div class="fee-card">
+                    <div class="fee-icon">📝</div>
+                    <h3 class="fee-name">签证费</h3>
+                    <p class="fee-amount">$345</p>
+                    <p style="color: var(--text-light); margin-top: 10px;">DS-260申请</p>
+                </div>
+                <div class="fee-card">
+                    <div class="fee-icon">🖐️</div>
+                    <h3 class="fee-name">指纹采集费</h3>
+                    <p class="fee-amount">$85</p>
+                    <p style="color: var(--text-light); margin-top: 10px;">14-79岁申请人</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ部分 -->
+    <section id="faq" class="content-section">
+        <div class="faq-section">
+            <h2 class="faq-title">常见问题解答</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>EB-1A和NIW有什么区别？</h3>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>主要区别包括：<br>
+                    1. 优先级别：EB-1A是第一优先，NIW是第二优先<br>
+                    2. 审批时间：EB-1A加急15天，NIW加急45天<br>
+                    3. 学历要求：EB-1A无学历要求，NIW通常需要高学历<br>
+                    4. 适用领域：EB-1A包括体育领域，NIW不包括<br>
+                    5. 获批时间：EB-1A通常2-3年拿绿卡，NIW需要3-4年</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>什么是优先日期（Priority Date）？</h3>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>优先日期是指移民局正式接收您的移民申请的日期。这个日期决定了您在排期中的位置。当排期到达您的优先日期时，您就可以进行下一步程序（申请绿卡）。对于EB-1类别，目前基本没有排期；NIW可能有一定排期。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>是否需要英语成绩？</h3>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>EB-1A和NIW都不要求提供英语成绩证明。但良好的英语水平有助于面试环节，以及将来在美国的生活和工作。申请材料需要翻译成英文，但这由专业翻译团队完成。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>配偶和子女可以一起申请吗？</h3>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>是的，主申请人的配偶和21岁以下未婚子女可以作为随行依亲一同申请。他们将获得与主申请人相同的绿卡身份。配偶可以在美国自由工作，子女可以享受免费公立教育。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>申请期间可以去美国吗？</h3>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>可以。在I-140申请期间，您仍然可以用B1/B2旅游签证访问美国。但需要注意的是，您必须证明您有回国的意图。如果您在美国境内提交了I-485调整身份申请，则可以同时申请回美证（Advance Parole），获批后可自由出入美国。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA部分 -->
+    <div class="content-section">
+        <div class="cta-section">
+            <h2 class="cta-title">准备开始您的移民之旅？</h2>
+            <p class="cta-desc">专业团队为您量身定制移民方案</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-white">立即免费评估</a>
+                <a href="tel:400-123-4567" class="btn btn-outline-white">电话咨询</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; padding: 60px 30px 30px;">
+        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px;">
+            <div>
+                <h3 style="margin-bottom: 20px;">关于我们</h3>
+                <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">10年专业移民服务经验，500+成功案例，98%通过率，为您的美国梦保驾护航。</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">快速链接</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;"><a href="eb1a-requirement.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">EB-1A申请条件</a></li>
+                    <li style="margin-bottom: 10px;"><a href="successful-cases.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">成功案例</a></li>
+                    <li style="margin-bottom: 10px;"><a href="immigration-info.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">移民信息</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">联系方式</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 400-123-4567</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> info@eb1a-immigration.com</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 北京市朝阳区某某大厦10层</p>
+            </div>            
+            <div>
+                <h3 style="margin-bottom: 20px;">分支机构</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 上海：浦东新区陆家嘴</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> 深圳：福田区CBD中心</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 洛杉矶：Downtown LA</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">关注我们</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px;">扫码关注公众号，获取最新移民资讯</p>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div style="background: white; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="color: #333;">二维码</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 120px; gap: 15px;">
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weixin"></i></a>
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="color: rgba(255,255,255,0.5);">© 2024 专业移民服务 | 京ICP备XXXXXXX号 | Behind Everyone Above Everything</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ展开/收起
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // 导航滚动
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            
+            // 更新活动标签
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

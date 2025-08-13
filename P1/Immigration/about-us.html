@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 | 专业美国EB-1A和NIW移民服务 - Behind Everyone Above Everything</title>
+    <meta name="description" content="10年专业移民服务经验，500+成功案例，98%通过率。专业团队为您提供美国EB-1A杰出人才移民和NIW国家利益豁免全程服务。">
+    <meta name="keywords" content="移民公司,EB-1A服务团队,移民律师,专业移民机构,美国移民服务,Behind Everyone Above Everything">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e3c72;
+            --secondary-blue: #2a5298;
+            --accent-gold: #ffd700;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', '微软雅黑', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: white;
+            overflow-x: hidden;
+        }
+        
+        /* Remove any decorative lines */
+        body::before,
+        body::after,
+        section::before {
+            display: none !important;
+        }
+        
+        /* Ensure no overflow issues */
+        .page-wrapper {
+            overflow: hidden;
+        }
+
+        /* Animation Library */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Top Banner */
+        .top-banner {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .top-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* 导航栏 */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary-blue);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-blue);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            padding: 150px 30px 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            color: white;
+            margin-bottom: 25px;
+            font-weight: 700;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            color: rgba(255,255,255,0.95);
+            max-width: 700px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-10px);
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Company Story Section */
+        .company-story {
+            padding: 100px 30px;
+            background: white;
+        }
+
+        .story-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .story-content {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            position: relative;
+            line-height: 1.2;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .story-text {
+            color: var(--text-light);
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .story-highlights {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .highlight-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        /* Services Comparison */
+        .services-comparison {
+            padding: 100px 30px;
+            background: var(--bg-light);
+        }
+        
+        .services-comparison .section-header::before {
+            display: none;
+        }
+
+        .comparison-table {
+            max-width: 1200px;
+            margin: 60px auto 0;
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        .comparison-header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            padding: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            padding: 25px 30px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.3s;
+        }
+
+        .comparison-row:hover {
+            background: var(--bg-light);
+            transform: scale(1.02);
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-label {
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        .comparison-value {
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        .comparison-value.highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 100px 30px;
+            background: white;
+        }
+
+        .team-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .team-header::before {
+            display: none;
+        }
+
+        .team-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: all 0.4s;
+            animation: fadeInScale 0.8s ease-out;
+        }
+
+        .team-member:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+
+        .member-image {
+            height: 280px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+        }
+
+        .member-info {
+            padding: 30px;
+        }
+
+        .member-name {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .member-title {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .member-desc {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Success Cases Preview */
+        .success-preview {
+            padding: 100px 30px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .success-title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .success-subtitle {
+            font-size: 20px;
+            margin-bottom: 60px;
+            opacity: 0.95;
+        }
+
+        .cases-counter {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+        }
+
+        .case-item {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px 20px;
+            border-radius: 20px;
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: all 0.3s;
+        }
+
+        .case-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.1);
+        }
+
+        .case-field {
+            font-size: 16px;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .case-count {
+            font-size: 36px;
+            font-weight: bold;
+            color: var(--accent-gold);
+        }
+
+        /* Process Timeline */
+        .process-section {
+            padding: 100px 30px;
+            background: white;
+        }
+        
+        .process-section .section-header::before {
+            display: none;
+        }
+
+        .timeline-container {
+            max-width: 1000px;
+            margin: 60px auto 0;
+            position: relative;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 80px;
+            position: relative;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin: 0 40px;
+            transition: all 0.3s;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: white;
+            border: 4px solid var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--primary-blue);
+            box-shadow: 0 5px 20px rgba(30, 60, 114, 0.3);
+        }
+
+        .timeline-title {
+            font-size: 22px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 100px 30px;
+            background: var(--bg-light);
+        }
+        
+        .contact-section .section-header::before {
+            display: none;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-right: 25px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .contact-details p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            animation: fadeInScale 0.8s ease-out;
+        }
+
+        .form-title {
+            font-size: 28px;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            font-size: 16px;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 5px rgba(30, 60, 114, 0.1);
+            outline: none;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 60px 30px 30px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 15px;
+        }
+
+        .footer-column a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .story-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cases-counter {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .comparison-header,
+            .comparison-row {
+                font-size: 14px;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        Behind Everyone Above Everything
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <span>专业移民服务</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="immigration-info.html">移民信息</a></li>
+                <li><a href="eb1a-requirement.html">EB1-A申请条件</a></li>
+                <li><a href="successful-cases.html">成功案例</a></li>
+                <li><a href="overseas-real-estate.html">海外房产</a></li>
+                <li><a href="about-us.html" class="active">关于我们</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary">预约咨询</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">专业成就梦想，信任铸就未来</h1>
+            <p class="hero-subtitle">十年专注美国EB-1A杰出人才与NIW国家利益豁免移民服务<br>助力精英人才实现美国梦</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500" data-prefix="" data-suffix="+">0</div>
+                    <div class="stat-label">成功案例</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="98" data-prefix="" data-suffix="%">0</div>
+                    <div class="stat-label">通过率</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="15" data-prefix="" data-suffix="天">90</div>
+                    <div class="stat-label">最快获批</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="10" data-prefix="" data-suffix="+">0</div>
+                    <div class="stat-label">年专业经验</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="company-story">
+        <div class="story-container">
+            <div class="story-content">
+                <span class="section-badge">Since 2015</span>
+                <h2 class="section-title">关于我们的故事</h2>
+                <p class="story-text">
+                    我们成立于2015年，是一家专注于美国EB-1A杰出人才移民和NIW国家利益豁免的专业服务机构。
+                    公司总部位于北京，在上海、深圳、洛杉矶设有分支机构。
+                </p>
+                <p class="story-text">
+                    十年来，我们始终秉承"Behind Everyone Above Everything"的服务理念，
+                    组建了包括资深移民律师、海外顾问、文案专家在内的专业团队，
+                    为超过500位杰出人才成功办理美国移民，在业界享有卓越声誉。
+                </p>
+                
+                <div class="story-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div>
+                            <strong>全球布局：</strong>北京总部 + 上海、深圳、洛杉矶分支机构
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <strong>专业团队：</strong>资深律师 + 文案专家 + 英文母语校对
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <strong>行业领先：</strong>98%通过率，远超行业平均水平
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-image" style="display: flex; align-items: center; justify-content: center;">
+                <div style="width: 100%; height: 500px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 30px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+                    <i class="fas fa-building" style="font-size: 120px; opacity: 0.5;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Comparison -->
+    <section class="services-comparison">
+        <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+            <h2 class="section-title" style="text-align: center; position: relative; display: inline-block;">文案服务优势对比</h2>
+            <p style="color: var(--text-light); font-size: 18px; margin-top: 20px;">专业服务，成功率导向，值得信赖</p>
+        </div>
+        
+        <div class="comparison-table">
+            <div class="comparison-header">
+                <div>服务对比</div>
+                <div style="text-align: center;">一般文案服务</div>
+                <div style="text-align: center;">我们的文案服务</div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-label">论证思路</div>
+                <div class="comparison-value">营销式论证思路</div>
+                <div class="comparison-value highlight">成功率导向论证思路</div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-label">文案人员</div>
+                <div class="comparison-value">全职与兼职人员，流动较频繁</div>
+                <div class="comparison-value highlight">全职专业文案，团队人员稳定</div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-label">翻译校对</div>
+                <div class="comparison-value">机器翻译为主，人工修改为辅</div>
+                <div class="comparison-value highlight">英文母语文学硕士人工翻译校对</div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-label">律师护航</div>
+                <div class="comparison-value">无律师审查</div>
+                <div class="comparison-value highlight">经验丰富美国律师全程把关</div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-label">评估分类</div>
+                <div class="comparison-value">2-3种评估分类</div>
+                <div class="comparison-value highlight">7种细化评估分类</div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-label">资源应用</div>
+                <div class="comparison-value">资源应用有限</div>
+                <div class="comparison-value highlight">真实资源应用</div>
+            </div>
+            
+            <div class="comparison-row">
+                <div class="comparison-label">应用核实</div>
+                <div class="comparison-value">不可核实查询</div>
+                <div class="comparison-value highlight">可随时官网查询</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Cases Preview -->
+    <section class="success-preview">
+        <h2 class="success-title">500+ 成功案例覆盖各行业</h2>
+        <p class="success-subtitle">从医疗专家到企业高管，从艺术家到科研学者</p>
+        
+        <div class="cases-counter">
+            <div class="case-item">
+                <div class="case-field">临床医生</div>
+                <div class="case-count">16</div>
+            </div>
+            <div class="case-item">
+                <div class="case-field">企业高管</div>
+                <div class="case-count">15</div>
+            </div>
+            <div class="case-item">
+                <div class="case-field">营销专家</div>
+                <div class="case-count">11</div>
+            </div>
+            <div class="case-item">
+                <div class="case-field">金融专家</div>
+                <div class="case-count">9</div>
+            </div>
+            <div class="case-item">
+                <div class="case-field">大数据专家</div>
+                <div class="case-count">9</div>
+            </div>
+            <div class="case-item">
+                <div class="case-field">上市公司高管</div>
+                <div class="case-count">8</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="team-header">
+            <h2 class="section-title" style="text-align: center; position: relative; display: inline-block;">专业团队</h2>
+            <p style="color: var(--text-light); font-size: 18px; margin-top: 20px;">资深专家护航，让您的申请更有保障</p>
+        </div>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3 class="member-name">张伟</h3>
+                    <p class="member-title">创始人 & CEO</p>
+                    <p class="member-desc">
+                        15年移民行业经验<br>
+                        北京大学法学硕士<br>
+                        美国移民律师协会会员
+                    </p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3 class="member-name">李明</h3>
+                    <p class="member-title">法律总监</p>
+                    <p class="member-desc">
+                        美国执业律师<br>
+                        哥伦比亚大学法学博士<br>
+                        精通EB-1A、NIW申请
+                    </p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3 class="member-name">王芳</h3>
+                    <p class="member-title">运营总监</p>
+                    <p class="member-desc">
+                        清华大学MBA<br>
+                        前美国移民局官员<br>
+                        客户满意度99%
+                    </p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image"></div>
+                <div class="member-info">
+                    <h3 class="member-name">王印宗</h3>
+                    <p class="member-title">高级移民顾问</p>
+                    <p class="member-desc">
+                        阿比德学院荣誉博士<br>
+                        8年移民服务经验<br>
+                        熟悉审批流程
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-section">
+        <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+            <h2 class="section-title" style="text-align: center; position: relative; display: inline-block;">服务流程</h2>
+            <p style="color: var(--text-light); font-size: 18px; margin-top: 20px;">标准化流程，专业化服务，全程透明</p>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">初步评估</h3>
+                    <p>专业评估团队对您的背景进行全面分析，确定最适合的移民方案</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">材料准备</h3>
+                    <p>一对一指导准备申请材料，专业文案团队撰写申请信</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">递交申请</h3>
+                    <p>向美国移民局递交I-140申请，可选择加急处理（15天内获批）</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">跟踪进度</h3>
+                    <p>全程跟踪申请进度，及时处理补件要求</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">成功获批</h3>
+                    <p>获得I-140批准后，协助办理后续手续，直至成功获得绿卡</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+            <h2 class="section-title" style="text-align: center; position: relative; display: inline-block;">联系我们</h2>
+            <p style="color: var(--text-light); font-size: 18px; margin-top: 20px;">专业团队随时为您服务</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>总部地址</h3>
+                        <p>北京市朝阳区建国路88号<br>SOHO现代城10层</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>咨询热线</h3>
+                        <p>400-888-9999<br>24小时专业服务</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>电子邮箱</h3>
+                        <p>info@excellentimmigration.com<br>工作日24小时内回复</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>办公时间</h3>
+                        <p>周一至周五 9:00-18:00<br>周六 10:00-16:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 class="form-title">在线咨询</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label">您的姓名 *</label>
+                        <input type="text" class="form-input" placeholder="请输入您的姓名" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">联系电话 *</label>
+                        <input type="tel" class="form-input" placeholder="请输入您的联系电话" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">咨询项目</label>
+                        <select class="form-select">
+                            <option value="">请选择咨询项目</option>
+                            <option>EB-1A杰出人才移民</option>
+                            <option>NIW国家利益豁免</option>
+                            <option>免费评估</option>
+                            <option>其他咨询</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">咨询内容 *</label>
+                        <textarea class="form-textarea" placeholder="请描述您的具体需求..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">提交咨询</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; padding: 60px 30px 30px;">
+        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px;">
+            <div>
+                <h3 style="margin-bottom: 20px;">关于我们</h3>
+                <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">10年专业移民服务经验，500+成功案例，98%通过率，为您的美国梦保驾护航。</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">快速链接</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;"><a href="eb1a-requirement.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">EB-1A申请条件</a></li>
+                    <li style="margin-bottom: 10px;"><a href="successful-cases.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">成功案例</a></li>
+                    <li style="margin-bottom: 10px;"><a href="immigration-info.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">移民信息</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">联系方式</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 400-123-4567</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> info@eb1a-immigration.com</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 北京市朝阳区某某大厦10层</p>
+            </div>            
+            <div>
+                <h3 style="margin-bottom: 20px;">分支机构</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 上海：浦东新区陆家嘴</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-envelope"></i> 深圳：福田区CBD中心</p>
+                <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-map-marker-alt"></i> 洛杉矶：Downtown LA</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 20px;">关注我们</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px;">扫码关注公众号，获取最新移民资讯</p>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div style="background: white; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="color: #333;">二维码</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 120px; gap: 15px;">
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weixin"></i></a>
+                        <a href="#" style="color: rgba(255,255,255,0.7); font-size: 20px;"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="color: rgba(255,255,255,0.5);">© 2024 专业移民服务 | 京ICP备XXXXXXX号 | Behind Everyone Above Everything</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('感谢您的咨询，我们将在24小时内与您联系！');
+        });
+
+        // 数字动画函数
+        function animateNumber(element, start, end, duration, prefix = '', suffix = '') {
+            const startTime = performance.now();
+            const difference = end - start;
+            
+            function updateNumber(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // 使用缓动函数让动画更自然
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const current = Math.round(start + (difference * easeOutQuart));
+                
+                element.textContent = prefix + current + suffix;
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                }
+            }
+            
+            requestAnimationFrame(updateNumber);
+        }
+
+        // 观察器回调函数
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        const prefix = stat.getAttribute('data-prefix') || '';
+                        const suffix = stat.getAttribute('data-suffix') || '';
+                        
+                        // 根据不同的数值设置不同的起始值和动画时长
+                        if (target === 500) {
+                            // 成功案例：从0增长到500
+                            animateNumber(stat, 0, target, 1000, prefix, suffix);
+                        } else if (target === 98) {
+                            // 通过率：从0增长到98
+                            animateNumber(stat, 0, target, 1000, prefix, suffix);
+                        } else if (target === 15) {
+                            // 最快获批：从90减少到15
+                            animateNumber(stat, 90, target, 1000, prefix, suffix);
+                        } else if (target === 10) {
+                            // 年经验：从0增长到10
+                            animateNumber(stat, 0, target, 1000, prefix, suffix);
+                        }
+                    });
+                    
+                    // 动画只执行一次
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // Smooth scroll animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.timeline-item, .team-member, .case-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease-out';
+                observer.observe(el);
+            });
+
+            // 创建数字动画观察器
+            const statsObserver = new IntersectionObserver(handleIntersection, {
+                threshold: 0.5, // 当元素50%可见时触发
+                rootMargin: '0px 0px -100px 0px' // 提前100px触发
+            });
+
+            // 观察英雄区域（包含统计数字）
+            const heroSection = document.querySelector('.hero-section');
+            if (heroSection) {
+                statsObserver.observe(heroSection);
+            }
+        });
+    </script>
+</body>
+</html>
