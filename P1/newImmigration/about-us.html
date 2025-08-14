@@ -29,6 +29,7 @@
             line-height: 1.6;
             background: white;
             overflow-x: hidden;
+            min-width: 320px;
         }
         
         /* Remove any decorative lines */
@@ -174,6 +175,139 @@
         .nav-actions {
             display: flex;
             gap: 15px;
+        }
+        
+        /* 汉堡菜单按钮 */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 25px;
+            height: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .mobile-menu-toggle span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: var(--primary-blue);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+        
+        /* 移动端侧边栏导航 */
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mobile-nav-sidebar {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background: #1a1a2e;
+            z-index: 1000;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+        
+        .mobile-nav-sidebar.active {
+            right: 0;
+        }
+        
+        .mobile-nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-nav-logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .mobile-nav-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mobile-nav-menu li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-nav-menu a {
+            display: block;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-nav-menu a:hover,
+        .mobile-nav-menu a.active {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-nav-actions {
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-nav-actions .btn {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .btn {
@@ -821,38 +955,979 @@
                 display: none;
             }
             
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            /* 调整导航栏在小屏幕上的布局 */
+            .nav-container {
+                padding: 15px 20px;
+            }
+            
+            .logo {
+                font-size: 20px;
+            }
+            
+            .logo img {
+                height: 40px;
+                margin-right: 10px;
+            }
+            
+            .nav-actions {
+                gap: 10px;
+            }
+            
+            /* 调整按钮在小屏幕上的大小 */
+            .btn {
+                padding: 8px 20px;
+                font-size: 13px;
+            }
+            
             .hero-title {
                 font-size: 36px;
             }
             
+            .hero-subtitle {
+                font-size: 18px;
+                padding: 0 20px;
+            }
+            
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                padding: 0 20px;
+            }
+            
+            .stat-card {
+                padding: 25px 20px;
+            }
+            
+            .stat-number {
+                font-size: 42px;
+            }
+            
+            .stat-label {
+                font-size: 14px;
             }
             
             .story-container {
                 grid-template-columns: 1fr;
                 gap: 40px;
+                padding: 0 20px;
+            }
+            
+            .section-title {
+                font-size: 36px;
+            }
+            
+            .story-text {
+                font-size: 16px;
+            }
+            
+            .story-highlights {
+                padding: 25px 20px;
+            }
+            
+            .highlight-item {
+                margin-bottom: 15px;
+            }
+            
+            .highlight-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                margin-right: 20px;
             }
             
             .team-grid {
                 grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0 20px;
             }
             
             .cases-counter {
                 grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 0 20px;
+            }
+            
+            .case-item {
+                padding: 20px 15px;
+            }
+            
+            .case-count {
+                font-size: 36px;
+            }
+            
+            .case-field {
+                font-size: 14px;
             }
             
             .comparison-header,
             .comparison-row {
                 font-size: 14px;
+                padding: 15px 12px;
             }
             
             .contact-container {
                 grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 20px;
+            }
+            
+            .contact-form {
+                padding: 40px 30px;
+            }
+            
+            .form-title {
+                font-size: 24px;
+            }
+            
+            .form-input,
+            .form-select,
+            .form-textarea {
+                padding: 12px 16px;
+                font-size: 15px;
+            }
+            
+            .btn-submit {
+                padding: 16px;
+                font-size: 16px;
             }
             
             .footer-content {
                 grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 20px;
+            }
+            
+            /* Footer在中等屏幕上的优化 */
+            footer {
+                padding: 50px 30px 30px !important;
+            }
+            
+            /* 二维码区域在中等屏幕上的优化 */
+            .footer-content > div:last-child {
+                text-align: center;
+            }
+            
+            .footer-content > div:last-child > div:first-child {
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+        
+        /* 针对iPhone SE等超小屏幕的优化 */
+        @media (max-width: 375px) {
+            /* 导航栏在超小屏幕上的优化 */
+            .nav-container {
+                padding: 12px 15px;
+            }
+            
+            .logo {
+                font-size: 18px;
+            }
+            
+            .logo img {
+                height: 35px;
+                margin-right: 8px;
+            }
+            
+            .nav-actions {
+                gap: 8px;
+            }
+            
+            /* 按钮在超小屏幕上的优化 */
+            .btn {
+                padding: 7px 16px;
+                font-size: 12px;
+                border-radius: 20px;
+            }
+            
+            .hero-title {
+                font-size: 28px;
+                padding: 0 15px;
+            }
+            
+            .hero-subtitle {
+                font-size: 16px;
+                padding: 0 15px;
+                line-height: 1.6;
+            }
+            
+            .hero-section {
+                padding: 120px 15px 100px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 0 15px;
+            }
+            
+            .stat-card {
+                padding: 20px 15px;
+            }
+            
+            .stat-number {
+                font-size: 36px;
+            }
+            
+            .stat-label {
+                font-size: 13px;
+            }
+            
+            .section-title {
+                font-size: 32px;
+                line-height: 1.3;
+            }
+            
+            .story-container {
+                gap: 30px;
+                padding: 0 15px;
+            }
+            
+            .story-text {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+            
+            .story-highlights {
+                padding: 20px 15px;
+                border-radius: 15px;
+            }
+            
+            .highlight-item {
+                margin-bottom: 12px;
+            }
+            
+            .highlight-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                margin-right: 15px;
+            }
+            
+            .company-story,
+            .services-comparison,
+            .team-section,
+            .contact-section {
+                padding: 60px 15px;
+            }
+            
+            /* Footer在小屏幕上的优化 */
+            footer {
+                padding: 40px 15px 20px !important;
+            }
+            
+            .footer-content {
+                gap: 30px !important;
+                padding: 0 15px;
+            }
+            
+            /* 二维码区域在小屏幕上的优化 */
+            .footer-content > div:last-child {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+            
+            .footer-content > div:last-child > div:first-child {
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .footer-content > div:last-child > div:first-child > div:first-child {
+                width: 100px !important;
+                height: 100px !important;
+            }
+            
+            /* 确保所有文本在小屏幕上可读 */
+            .footer-content h3 {
+                font-size: 18px !important;
+                margin-bottom: 15px !important;
+            }
+            
+            .footer-content p,
+            .footer-content li {
+                font-size: 14px !important;
+            }
+            
+            /* 防止水平溢出 */
+            .footer-content {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            
+            /* 移动端导航在小屏幕上的优化 */
+            .mobile-nav-sidebar {
+                width: 100%;
+                right: -100%;
+            }
+            
+            .mobile-nav-sidebar.active {
+                right: 0;
+            }
+            
+            /* 汉堡菜单按钮在超小屏幕上的位置优化 */
+            .mobile-menu-toggle {
+                margin-left: 5px;
+            }
+        }
+        
+        /* 针对超小屏幕的额外优化 */
+        @media (max-width: 320px) {
+            /* 导航栏在极小屏幕上的优化 */
+            .nav-container {
+                padding: 10px 12px;
+            }
+            
+            .logo {
+                font-size: 16px;
+            }
+            
+            .logo img {
+                height: 30px;
+                margin-right: 6px;
+            }
+            
+            .nav-actions {
+                gap: 6px;
+            }
+            
+            /* 按钮在极小屏幕上的优化 */
+            .btn {
+                padding: 6px 14px;
+                font-size: 11px;
+                border-radius: 18px;
+            }
+            
+            .hero-title {
+                font-size: 24px;
+                padding: 0 12px;
+            }
+            
+            .hero-subtitle {
+                font-size: 15px;
+                padding: 0 12px;
+            }
+            
+            .hero-section {
+                padding: 100px 12px 80px;
+            }
+            
+            .stats-grid {
+                gap: 12px;
+                padding: 0 12px;
+            }
+            
+            .stat-card {
+                padding: 18px 12px;
+            }
+            
+            .stat-number {
+                font-size: 32px;
+            }
+            
+            .stat-label {
+                font-size: 12px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .story-container {
+                gap: 25px;
+                padding: 0 12px;
+            }
+            
+            .story-text {
+                font-size: 14px;
+            }
+            
+            .story-highlights {
+                padding: 18px 12px;
+            }
+            
+            .highlight-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+                margin-right: 12px;
+            }
+            
+            .company-story,
+            .services-comparison,
+            .team-section,
+            .contact-section {
+                padding: 50px 12px;
+            }
+            
+            .footer-content {
+                gap: 25px !important;
+                padding: 0 12px;
+            }
+            
+            .footer-content > div:last-child > div:first-child > div:first-child {
+                width: 80px !important;
+                height: 80px !important;
+            }
+            
+            footer {
+                padding: 30px 12px 15px !important;
+            }
+            
+            /* 汉堡菜单按钮在极小屏幕上的位置优化 */
+            .mobile-menu-toggle {
+                margin-left: 3px;
+            }
+        }
+        
+        /* 全局响应式优化 */
+        @media (max-width: 480px) {
+            /* 确保所有容器在小屏幕上不会溢出 */
+            .hero-content,
+            .story-container,
+            .services-comparison > div,
+            .team-section > div,
+            .contact-section > div {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            
+            /* 调整hero section的padding */
+            .hero-section {
+                padding: 100px 20px 80px !important;
+            }
+            
+            /* 确保所有section在小屏幕上都有合适的padding */
+            .company-story,
+            .services-comparison,
+            .team-section,
+            .contact-section {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            
+            /* 确保所有固定宽度的元素在小屏幕上都能正确显示 */
+            .story-image > div {
+                height: 300px !important;
+            }
+            
+            /* 调整比较表格在小屏幕上的显示 */
+            .comparison-table {
+                margin: 40px 20px 0 !important;
+                border-radius: 20px !important;
+                overflow-x: auto !important;
+            }
+            
+            .comparison-header,
+            .comparison-row {
+                grid-template-columns: 1fr 1fr 1fr !important;
+                padding: 20px 15px !important;
+                font-size: 14px !important;
+                min-width: 600px !important;
+            }
+            
+            .comparison-table::-webkit-scrollbar {
+                height: 6px;
+            }
+            
+            .comparison-table::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 3px;
+            }
+            
+            .comparison-table::-webkit-scrollbar-thumb {
+                background: var(--primary-blue);
+                border-radius: 3px;
+            }
+            
+            /* 移动端导航在中等屏幕上的优化 */
+            .mobile-nav-sidebar {
+                width: 280px;
+            }
+            
+            /* 汉堡菜单按钮在中等屏幕上的位置优化 */
+            .mobile-menu-toggle {
+                margin-left: 8px;
+            }
+            
+            /* Footer在480px以下的强制优化 */
+            .footer-content {
+                grid-template-columns: 1fr !important;
+                gap: 35px !important;
+                padding: 0 20px !important;
+            }
+            
+            .footer-content > div:last-child > div:first-child > div:first-child {
+                width: 90px !important;
+                height: 90px !important;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            .comparison-table {
+                margin: 25px 10px 0 !important;
+                border-radius: 12px !important;
+            }
+            
+            .comparison-header,
+            .comparison-row {
+                padding: 12px 8px !important;
+                font-size: 12px !important;
+                min-width: 450px !important;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .comparison-table {
+                margin: 20px 8px 0 !important;
+                border-radius: 10px !important;
+            }
+            
+            .comparison-header,
+            .comparison-row {
+                padding: 10px 6px !important;
+                font-size: 11px !important;
+                min-width: 400px !important;
+            }
+        }
+        
+        /* 针对中等屏幕的额外优化 */
+        @media (max-width: 600px) {
+            /* 导航栏在中等屏幕上的优化 */
+            .nav-container {
+                padding: 15px 25px;
+            }
+            
+            .logo {
+                font-size: 22px;
+            }
+            
+            .logo img {
+                height: 45px;
+                margin-right: 12px;
+            }
+            
+            .nav-actions {
+                gap: 12px;
+            }
+            
+            /* 按钮在中等屏幕上的优化 */
+            .btn {
+                padding: 9px 22px;
+                font-size: 13px;
+            }
+            
+            .hero-title {
+                font-size: 32px;
+                padding: 0 25px;
+            }
+            
+            .hero-subtitle {
+                font-size: 19px;
+                padding: 0 25px;
+            }
+            
+            .stats-grid {
+                gap: 25px;
+                padding: 0 25px;
+            }
+            
+            .stat-card {
+                padding: 28px 22px;
+            }
+            
+            .stat-number {
+                font-size: 44px;
+            }
+            
+            .section-title {
+                font-size: 38px;
+            }
+            
+            .story-container {
+                gap: 50px;
+                padding: 0 25px;
+            }
+            
+            .story-text {
+                font-size: 17px;
+            }
+            
+            .story-highlights {
+                padding: 28px 22px;
+            }
+            
+            .highlight-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 22px;
+                margin-right: 22px;
+            }
+            
+            .company-story,
+            .services-comparison,
+            .team-section,
+            .contact-section {
+                padding: 80px 25px;
+            }
+            
+            /* 汉堡菜单按钮在中等屏幕上的位置优化 */
+            .mobile-menu-toggle {
+                margin-left: 10px;
+            }
+            
+            /* Footer在600px以下的强制优化 */
+            .footer-content {
+                grid-template-columns: 1fr !important;
+                gap: 40px !important;
+                padding: 0 25px !important;
+            }
+            
+            .footer-content > div:last-child > div:first-child > div:first-child {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+        
+        /* 强制覆盖所有内联样式的footer优化 */
+        .footer-content {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+        
+        /* 确保footer在所有屏幕尺寸下都不会产生水平滚动 */
+        footer {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        
+        /* 防止任何元素产生水平溢出 */
+        body, html {
+            overflow-x: hidden !important;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+        
+        /* 确保所有section都不会溢出 */
+        section {
+            overflow-x: hidden !important;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+        
+        /* cases-counter的响应式优化 */
+        @media (max-width: 768px) {
+            .cases-counter {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 20px !important;
+                padding: 0 20px !important;
+            }
+            
+            .case-item {
+                padding: 25px 15px !important;
+            }
+            
+            .case-count {
+                font-size: 32px !important;
+            }
+            
+            .case-field {
+                font-size: 14px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cases-counter {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 15px !important;
+                padding: 0 15px !important;
+            }
+            
+            .case-item {
+                padding: 20px 12px !important;
+            }
+            
+            .case-count {
+                font-size: 28px !important;
+            }
+            
+            .case-field {
+                font-size: 13px !important;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            .cases-counter {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+                padding: 0 12px !important;
+            }
+            
+            .case-item {
+                padding: 18px 10px !important;
+            }
+            
+            .case-count {
+                font-size: 26px !important;
+            }
+            
+            .case-field {
+                font-size: 12px !important;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .cases-counter {
+                gap: 10px !important;
+                padding: 0 10px !important;
+            }
+            
+            .case-item {
+                padding: 15px 8px !important;
+            }
+            
+            .case-count {
+                font-size: 24px !important;
+            }
+            
+            .case-field {
+                font-size: 11px !important;
+            }
+        }
+        
+        /* team-grid的响应式优化 */
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 30px !important;
+                padding: 0 20px !important;
+            }
+            
+            .team-member {
+                border-radius: 20px !important;
+            }
+            
+            .member-image {
+                height: 240px !important;
+            }
+            
+            .member-info {
+                padding: 25px 20px !important;
+            }
+            
+            .member-name {
+                font-size: 20px !important;
+            }
+            
+            .member-title {
+                font-size: 14px !important;
+            }
+            
+            .member-desc {
+                font-size: 14px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr !important;
+                gap: 25px !important;
+                padding: 0 15px !important;
+            }
+            
+            .team-member {
+                border-radius: 18px !important;
+            }
+            
+            .member-image {
+                height: 220px !important;
+            }
+            
+            .member-info {
+                padding: 20px 18px !important;
+            }
+            
+            .member-name {
+                font-size: 18px !important;
+            }
+            
+            .member-title {
+                font-size: 13px !important;
+            }
+            
+            .member-desc {
+                font-size: 13px !important;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            .team-grid {
+                gap: 20px !important;
+                padding: 0 12px !important;
+            }
+            
+            .team-member {
+                border-radius: 15px !important;
+            }
+            
+            .member-image {
+                height: 200px !important;
+            }
+            
+            .member-info {
+                padding: 18px 15px !important;
+            }
+            
+            .member-name {
+                font-size: 17px !important;
+            }
+            
+            .member-title {
+                font-size: 12px !important;
+            }
+            
+            .member-desc {
+                font-size: 12px !important;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .team-grid {
+                gap: 15px !important;
+                padding: 0 10px !important;
+            }
+            
+            .team-member {
+                border-radius: 12px !important;
+            }
+            
+            .member-image {
+                height: 180px !important;
+            }
+            
+            .member-info {
+                padding: 15px 12px !important;
+            }
+            
+            .member-name {
+                font-size: 16px !important;
+            }
+            
+            .member-title {
+                font-size: 11px !important;
+            }
+            
+            .member-desc {
+                font-size: 11px !important;
+            }
+        }
+        
+        /* 最终优化：确保所有元素都不会产生白色空白 */
+        * {
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+        
+        /* 防止任何容器溢出 */
+        .container, .wrapper, .content, .section {
+            max-width: 100% !important;
+            width: 100% !important;
+            overflow-x: hidden !important;
+        }
+        
+        /* 确保所有grid和flex容器都响应式 */
+        [class*="grid"], [class*="flex"] {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+        
+        /* 强制所有内联样式在小屏幕上被覆盖 */
+        @media (max-width: 768px) {
+            [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+            
+            [style*="max-width"] {
+                max-width: 100% !important;
+            }
+            
+            [style*="width"] {
+                width: 100% !important;
+            }
+        }
+        
+        /* 针对超小屏幕的强制优化 */
+        @media (max-width: 375px) {
+            [style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+            
+            [style*="padding"] {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+            
+            [style*="margin"] {
+                margin-left: 15px !important;
+                margin-right: 15px !important;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            [style*="padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+            
+            [style*="margin"] {
+                margin-left: 12px !important;
+                margin-right: 12px !important;
+            }
+        }
+        
+        /* 确保统计数字在移动端正确显示和动画 */
+        @media (max-width: 768px) {
+            .stats-grid {
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            
+            .stat-number {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transition: none !important;
+            }
+            
+            /* 确保数字在动画过程中保持可见 */
+            .stat-number.animating {
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+        }
+        
+        /* 添加调试样式，帮助识别问题 */
+        .stat-number {
+            position: relative;
+        }
+        
+        .stat-number::after {
+            content: attr(data-target);
+            position: absolute;
+            top: -20px;
+            left: 0;
+            font-size: 10px;
+            color: red;
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        
+        @media (max-width: 768px) {
+            .stat-number::after {
+                display: none;
             }
         }
     </style>
@@ -880,6 +1955,11 @@
             </ul>
             <div class="nav-actions">
                 <button class="btn btn-primary">预约咨询</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -908,6 +1988,11 @@
                     <div class="stat-label">年专业经验</div>
                 </div>
             </div>
+            
+            <!-- 调试按钮：手动触发动画 -->
+            <button id="testAnimation" style="margin-top: 20px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; display: none;">
+                测试数字动画
+            </button>
         </div>
     </section>
 
@@ -1107,9 +2192,9 @@
                     <h3 class="member-name">王印宗</h3>
                     <p class="member-title">高级移民顾问</p>
                     <p class="member-desc">
-                        阿比德学院荣誉博士<br>
+                        纽芬兰纪念大学硕士<br>
                         8年移民服务经验<br>
-                        熟悉审批流程
+                        精通EB-1A审批流程
                     </p>
                 </div>
             </div>
@@ -1265,7 +2350,7 @@
 
     <!-- Footer -->
     <footer style="background: #2c3e50; color: white; padding: 60px 30px 30px;">
-        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px;">
+        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px;" class="footer-content">
             <div>
                 <h3 style="margin-bottom: 20px;">关于我们</h3>
                 <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">10年专业移民服务经验，500+成功案例，98%通过率，为您的美国梦保驾护航。</p>
@@ -1309,6 +2394,26 @@
         </div>
     </footer>
 
+    <!-- 移动端导航菜单 -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav-sidebar" id="mobileNavSidebar">
+        <div class="mobile-nav-header">
+            <div class="mobile-nav-logo">专业移民服务</div>
+            <button class="mobile-nav-close" id="mobileNavClose">×</button>
+        </div>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="immigration-info.html">移民信息</a></li>
+            <li><a href="eb1a-requirement.html">EB1-A申请条件</a></li>
+            <li><a href="successful-cases.html">成功案例</a></li>
+            <li><a href="overseas-real-estate.html">海外房产</a></li>
+            <li><a href="about-us.html" class="active">关于我们</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+            <button class="btn btn-primary">预约咨询</button>
+        </div>
+    </div>
+
     <script>
         // Form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
@@ -1318,6 +2423,12 @@
 
         // 数字动画函数
         function animateNumber(element, start, end, duration, prefix = '', suffix = '') {
+            // 确保元素存在
+            if (!element) return;
+            
+            // 添加动画类
+            element.classList.add('animating');
+            
             const startTime = performance.now();
             const difference = end - start;
             
@@ -1333,10 +2444,47 @@
                 
                 if (progress < 1) {
                     requestAnimationFrame(updateNumber);
+                } else {
+                    // 动画完成后移除类
+                    element.classList.remove('animating');
                 }
             }
             
             requestAnimationFrame(updateNumber);
+        }
+        
+        // 手动触发数字动画的函数
+        function triggerStatsAnimation() {
+            const heroSection = document.querySelector('.hero-section');
+            if (!heroSection) return;
+            
+            const statNumbers = heroSection.querySelectorAll('.stat-number');
+            if (statNumbers.length === 0) return;
+            
+            console.log('Triggering stats animation for', statNumbers.length, 'elements');
+            
+            statNumbers.forEach((stat, index) => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                const prefix = stat.getAttribute('data-prefix') || '';
+                const suffix = stat.getAttribute('data-suffix') || '';
+                
+                console.log(`Animating stat ${index + 1}:`, { target, prefix, suffix });
+                
+                // 根据不同的数值设置不同的起始值和动画时长
+                if (target === 500) {
+                    // 成功案例：从0增长到500
+                    animateNumber(stat, 0, target, 1000, prefix, suffix);
+                } else if (target === 98) {
+                    // 通过率：从0增长到98
+                    animateNumber(stat, 0, target, 1000, prefix, suffix);
+                } else if (target === 15) {
+                    // 最快获批：从90减少到15
+                    animateNumber(stat, 90, target, 1000, prefix, suffix);
+                } else if (target === 10) {
+                    // 年经验：从0增长到10
+                    animateNumber(stat, 0, target, 1000, prefix, suffix);
+                }
+            });
         }
 
         // 观察器回调函数
@@ -1372,8 +2520,52 @@
             });
         }
 
-        // Smooth scroll animation
+        // 移动端导航菜单控制
+        function initMobileNav() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+            const mobileNavSidebar = document.getElementById('mobileNavSidebar');
+            const mobileNavClose = document.getElementById('mobileNavClose');
+            
+            function openMobileNav() {
+                mobileMenuToggle.classList.add('active');
+                mobileNavOverlay.classList.add('active');
+                mobileNavSidebar.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeMobileNav() {
+                mobileMenuToggle.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                mobileNavSidebar.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            // 打开菜单
+            mobileMenuToggle.addEventListener('click', openMobileNav);
+            
+            // 关闭菜单
+            mobileNavClose.addEventListener('click', closeMobileNav);
+            mobileNavOverlay.addEventListener('click', closeMobileNav);
+            
+            // 点击菜单项后关闭菜单
+            document.querySelectorAll('.mobile-nav-menu a').forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+            
+            // ESC键关闭菜单
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeMobileNav();
+                }
+            });
+        }
+        
+                // Smooth scroll animation
         document.addEventListener('DOMContentLoaded', function() {
+            // 初始化移动端导航
+            initMobileNav();
+            
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -100px 0px'
@@ -1397,14 +2589,104 @@
 
             // 创建数字动画观察器
             const statsObserver = new IntersectionObserver(handleIntersection, {
-                threshold: 0.5, // 当元素50%可见时触发
-                rootMargin: '0px 0px -100px 0px' // 提前100px触发
+                threshold: 0.1, // 降低阈值，当元素10%可见时触发
+                rootMargin: '0px 0px -50px 0px' // 减少提前触发距离
             });
 
             // 观察英雄区域（包含统计数字）
             const heroSection = document.querySelector('.hero-section');
             if (heroSection) {
                 statsObserver.observe(heroSection);
+                
+                // 在移动端，如果元素已经在视口中，立即触发动画
+                if (window.innerWidth <= 768) {
+                    const rect = heroSection.getBoundingClientRect();
+                    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                    if (isVisible) {
+                        // 延迟一点时间确保DOM完全加载
+                        setTimeout(() => {
+                            triggerStatsAnimation();
+                        }, 500);
+                    }
+                }
+                
+                // 添加窗口大小变化监听器，确保在旋转屏幕或改变窗口大小时动画仍然工作
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth <= 768) {
+                        const rect = heroSection.getBoundingClientRect();
+                        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                        if (isVisible) {
+                            // 检查是否已经动画过
+                            const firstStat = heroSection.querySelector('.stat-number');
+                            if (firstStat && firstStat.textContent === '0' || firstStat.textContent === '90') {
+                                setTimeout(() => {
+                                    triggerStatsAnimation();
+                                }, 300);
+                            }
+                        }
+                        
+                        // 显示测试按钮
+                        const testButton = document.getElementById('testAnimation');
+                        if (testButton) {
+                            testButton.style.display = 'block';
+                        }
+                    } else {
+                        // 隐藏测试按钮
+                        const testButton = document.getElementById('testAnimation');
+                        if (testButton) {
+                            testButton.style.display = 'none';
+                        }
+                    }
+                });
+                
+                // 添加触摸事件监听器，确保在触摸滚动时动画能触发
+                if ('ontouchstart' in window) {
+                    let touchStartY = 0;
+                    let touchEndY = 0;
+                    
+                    document.addEventListener('touchstart', function(e) {
+                        touchStartY = e.touches[0].clientY;
+                    });
+                    
+                    document.addEventListener('touchend', function(e) {
+                        touchEndY = e.changedTouches[0].clientY;
+                        const scrollDistance = Math.abs(touchEndY - touchStartY);
+                        
+                        // 如果滚动距离足够大，检查是否需要触发动画
+                        if (scrollDistance > 50) {
+                            setTimeout(() => {
+                                const rect = heroSection.getBoundingClientRect();
+                                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                                if (isVisible) {
+                                    const firstStat = heroSection.querySelector('.stat-number');
+                                    if (firstStat && (firstStat.textContent === '0' || firstStat.textContent === '90')) {
+                                        triggerStatsAnimation();
+                                    }
+                                }
+                            }, 200);
+                        }
+                    });
+                }
+            }
+            
+            // 备用方案：如果Intersection Observer不可用，延迟3秒后自动触发动画
+            if (!('IntersectionObserver' in window)) {
+                console.log('IntersectionObserver not supported, using fallback');
+                setTimeout(() => {
+                    triggerStatsAnimation();
+                }, 3000);
+            }
+            
+            // 在移动端显示测试按钮
+            if (window.innerWidth <= 768) {
+                const testButton = document.getElementById('testAnimation');
+                if (testButton) {
+                    testButton.style.display = 'block';
+                    testButton.addEventListener('click', function() {
+                        console.log('Manual animation trigger clicked');
+                        triggerStatsAnimation();
+                    });
+                }
             }
         });
     </script>
