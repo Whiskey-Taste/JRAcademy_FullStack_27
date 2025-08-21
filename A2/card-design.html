@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI Design - Modern Testimonials</title>
+    <style>
+        /* CSS Variables - Design Tokens */
+        :root {
+            --primary-blue: #1e3c72;
+            --secondary-blue: #2a5298;
+            --accent-gold: #FFB800;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --purple-gradient: linear-gradient(135deg, #7264FF 0%, #5C4FF3 100%);
+            --blue-gradient: linear-gradient(135deg, #45B1FF 0%, #3289FF 100%);
+            --shadow-light: 0 8px 24px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', '微软雅黑', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Card Grid Layout */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        /* Course Card Styles */
+        .course-card {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-light);
+            cursor: pointer;
+        }
+
+        .course-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: var(--shadow-hover), 0 0 0 2px rgba(255, 255, 255, 0.3);
+        }
+
+        .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 1;
+        }
+
+        .course-card:hover::before {
+            opacity: 1;
+        }
+
+        .course-card:hover .course-title {
+            transform: translateX(5px);
+        }
+
+        .course-card:hover .course-description {
+            transform: translateX(5px);
+        }
+
+        .course-card:hover .learn-more {
+            transform: translateX(5px);
+        }
+
+        /* Course Card Background Gradients */
+        .course-card.purple {
+            background: var(--purple-gradient);
+        }
+
+        .course-card.blue {
+            background: var(--blue-gradient);
+        }
+
+        /* Course Card Content Styles */
+        .course-content {
+            padding: 2.5rem;
+            color: var(--white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .course-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+            transition: transform 0.3s ease;
+        }
+
+        .course-description {
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            line-height: 1.6;
+            transition: transform 0.3s ease;
+        }
+
+        .learn-more {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 0.75rem;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .learn-more:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Testimonial Card Styles */
+        .testimonial-card {
+            flex: 1;
+            min-width: 400px;
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: 1.5rem;
+            box-shadow: var(--shadow-light);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: var(--shadow-hover), 0 0 0 2px rgba(114, 100, 255, 0.2);
+        }
+
+        .testimonial-card.highlighted:hover {
+            box-shadow: var(--shadow-hover), 0 0 0 2px rgba(255, 255, 255, 0.3);
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(114, 100, 255, 0.05) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+
+        .testimonial-card:hover::before {
+            opacity: 1;
+        }
+
+        .testimonial-card.highlighted::before {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+        }
+
+        .testimonial-card.highlighted {
+            background: var(--purple-gradient);
+            color: var(--white);
+        }
+
+        /* User Profile Styles */
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .user-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 1.5rem;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border: 3px solid var(--white);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover .user-avatar {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-details {
+            flex: 1;
+        }
+
+        .user-details h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .testimonial-card.highlighted .user-details h3 {
+            color: var(--white);
+        }
+
+        .user-details p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .testimonial-card.highlighted .user-details p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-card.highlighted .testimonial-text {
+            color: var(--white);
+            opacity: 0.95;
+        }
+
+        /* Rating Styles */
+        .rating {
+            color: var(--accent-gold);
+            font-size: 1.25rem;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card.highlighted .rating {
+            color: var(--white);
+        }
+
+        .testimonial-card:hover .rating {
+            transform: scale(1.1);
+            color: #FFD700;
+        }
+
+        .testimonial-card.highlighted:hover .rating {
+            color: var(--accent-gold);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .card-grid {
+                gap: 1.5rem;
+            }
+            
+            .course-content,
+            .testimonial-card {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .card-grid {
+                gap: 1rem;
+                flex-direction: column;
+            }
+            
+            .course-card,
+            .testimonial-card {
+                min-width: 100%;
+            }
+            
+            .course-content {
+                padding: 1.75rem;
+            }
+            
+            .course-title {
+                font-size: 1.5rem;
+            }
+            
+            .user-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .user-avatar {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .rating {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .course-content,
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .course-card,
+        .testimonial-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .course-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .testimonial-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .testimonial-card:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h1 class="section-title">Modern Card Design</h1>
+            <p class="section-subtitle">Beautiful and responsive card layouts with modern design principles</p>
+        </div>
+
+        <!-- Course Cards Section -->
+        <div class="card-grid">
+            <div class="course-card purple">
+                <div class="course-content">
+                    <h2 class="course-title">UX Research</h2>
+                    <p class="course-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="learn-more">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="course-card blue">
+                <div class="course-content">
+                    <h2 class="course-title">Bootcamp</h2>
+                    <p class="course-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="learn-more">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Cards Section -->
+        <div class="card-grid">
+            <div class="testimonial-card" id="bobby-card">
+                <div class="user-info">
+                    <img src="./Bobby Jennings.webp" alt="Bobby Jennings" class="user-avatar">
+                    <div class="user-details">
+                        <h3>Bobby Jennings</h3>
+                        <p>Founder & CEO, Sketch App</p>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <p class="testimonial-text">All users on MySpace will know that there are millions of people out there. Every day besides so many people joining this community, there are many others who will be looking out for friends.</p>
+            </div>
+            <div class="testimonial-card highlighted" id="donald-card">
+                <div class="user-info">
+                    <img src="./Donald Bridges.webp" alt="Donald Bridges" class="user-avatar">
+                    <div class="user-details">
+                        <h3>Donald Bridges</h3>
+                        <p>Founder & CEO, Adobe</p>
+                    </div>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <p class="testimonial-text">All users on MySpace will know that there are millions of people out there. Every day besides so many people joining this community, there are many others who will be looking out for friends.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Interactive JavaScript for enhanced user experience
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click event listeners to cards
+            const cards = document.querySelectorAll('.course-card, .testimonial-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Add a subtle click effect
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+
+            // Add keyboard navigation support
+            cards.forEach(card => {
+                card.setAttribute('tabindex', '0');
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+
+            // Smooth scroll to top when clicking on section header
+            const sectionHeader = document.querySelector('.section-header');
+            sectionHeader.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Add intersection observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
